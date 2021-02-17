@@ -98,7 +98,7 @@ export default function ImageResult(images) {
           />
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} color="primary">
+          <Button onClick={handleClose} color="secondary">
             Close
           </Button>
         </DialogActions>
