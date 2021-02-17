@@ -3,8 +3,29 @@ body {
   padding: 0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .searchBar {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.link {
+  color: white;
+  cursor: pointer;
 }
