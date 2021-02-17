@@ -24,6 +24,7 @@ export default function SearchBar() {
   ];
 
   useEffect(() => {
+    document.title = `Get Pics - ${searchQuery}`;
     if (searchQuery == 0) {
       setImages([]);
     } else {
@@ -36,10 +37,10 @@ export default function SearchBar() {
     }
   }, [searchQuery, amount, type]);
 
-  console.log(
-    `https://pixabay.com/api/?key=${key}&q=${searchQuery}&image_type=${type}&per_page=${amount}&pretty=true`
-  );
-  console.log(images);
+  // console.log(
+  //   `https://pixabay.com/api/?key=${key}&q=${searchQuery}&image_type=${type}&per_page=${amount}&pretty=true`
+  // );
+  // console.log(images);
 
   return (
     <div>
