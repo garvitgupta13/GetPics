@@ -1,0 +1,10 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.searchBar {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
