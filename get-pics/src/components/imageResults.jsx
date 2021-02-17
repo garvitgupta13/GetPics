@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import GridList from "@material-ui/core/GridList";
@@ -6,7 +6,11 @@ import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
 import IconButton from "@material-ui/core/IconButton";
 import InfoIcon from "@material-ui/icons/Info";
-import ListSubheader from "@material-ui/core/ListSubheader";
+import Button from "@material-ui/core/Button";
+import Dialog from "@material-ui/core/Dialog";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
+import Slide from "@material-ui/core/Slide";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
   gridList: {
     width: 500,
     height: 450,
-    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
     transform: "translateZ(0)"
   },
   titleBar: {
@@ -32,11 +35,29 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
+
 export default function ImageResult(images) {
+  const [open, setOpen] = useState(false);
+  const [currImg, setCurrImg] = useState("");
   const res = images.images;
   const classes = useStyles();
+
+  const handleClickOpen = (image) => {
+    setOpen(true);
+    setCurrImg(image);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+    setCurrImg("");
+  };
+
   return (
     <div className={classes.root}>
+      {/* Image Component */}
       <GridList cols={3}>
         {res.map((image) => (
           <GridListTile key={image.id}>
@@ -49,6 +70,7 @@ export default function ImageResult(images) {
                 <IconButton
                   aria-label={`info about ${image.tags}`}
                   className={classes.icon}
+                  onClick={() => handleClickOpen(image)}
                 >
                   <InfoIcon />
                 </IconButton>
@@ -58,6 +80,29 @@ export default function ImageResult(images) {
           </GridListTile>
         ))}
       </GridList>
+
+      {/* Dialog Box */}
+      <Dialog
+        open={open}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-slide-title"
+        aria-describedby="alert-dialog-slide-description"
+      >
+        <DialogContent>
+          <img
+            src={currImg.largeImageURL}
+            alt={currImg.tags}
+            style={{ width: "100%" }}
+          />
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose} color="primary">
+            Close
+          </Button>
+        </DialogActions>
+      </Dialog>
     </div>
   );
 }
