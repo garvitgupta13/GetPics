@@ -6,6 +6,7 @@ import InputLabel from "@material-ui/core/InputLabel";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import axios from "axios";
+import Cameraman from "../cameraman.png";
 import "../App.css";
 
 export default function SearchBar() {
@@ -93,7 +94,21 @@ export default function SearchBar() {
           </Select>
         </FormControl>
       </div>
-      {images.length > 0 ? <ImageResult images={images} /> : null}
+      {images.length > 0 ? (
+        <ImageResult images={images} />
+      ) : (
+        <center>
+          <img
+            src={Cameraman}
+            style={{
+              width: "700px",
+              height: "500px",
+              marginTop: "0",
+              paddingTop: "0"
+            }}
+          />
+        </center>
+      )}
     </div>
   );
 }
