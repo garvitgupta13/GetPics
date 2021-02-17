@@ -5,7 +5,7 @@ import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
 import IconButton from "@material-ui/core/IconButton";
-import InfoIcon from "@material-ui/icons/Info";
+import ZoomInIcon from "@material-ui/icons/ZoomIn";
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
@@ -72,7 +72,7 @@ export default function ImageResult(images) {
                   className={classes.icon}
                   onClick={() => handleClickOpen(image)}
                 >
-                  <InfoIcon />
+                  <ZoomInIcon />
                 </IconButton>
               }
               className={classes.titleBar}
