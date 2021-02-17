@@ -15,7 +15,7 @@ export default function SearchBar() {
   const [images, setImages] = useState([]);
   const [amount, setAmount] = useState(10);
   const apiURL = "https://pixabay.com/api/";
-  const key = "15668789-02101638d5ae1ab3b75439767";
+  const key = "Get you key from https://pixabay.com/api/docs/";
   const categories = [
     { value: "all", label: "All" },
     { value: "photo", label: "Photo" },
