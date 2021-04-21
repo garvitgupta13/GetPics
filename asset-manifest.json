@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/get-pics/static/css/main.0a4f82c2.chunk.css",
-    "main.js": "/get-pics/static/js/main.c034a692.chunk.js",
-    "main.js.map": "/get-pics/static/js/main.c034a692.chunk.js.map",
-    "runtime-main.js": "/get-pics/static/js/runtime-main.d0da93c8.js",
-    "runtime-main.js.map": "/get-pics/static/js/runtime-main.d0da93c8.js.map",
-    "static/js/2.cb68f4a2.chunk.js": "/get-pics/static/js/2.cb68f4a2.chunk.js",
-    "static/js/2.cb68f4a2.chunk.js.map": "/get-pics/static/js/2.cb68f4a2.chunk.js.map",
-    "static/js/3.08f09c7f.chunk.js": "/get-pics/static/js/3.08f09c7f.chunk.js",
-    "static/js/3.08f09c7f.chunk.js.map": "/get-pics/static/js/3.08f09c7f.chunk.js.map",
-    "index.html": "/get-pics/index.html",
-    "static/css/main.0a4f82c2.chunk.css.map": "/get-pics/static/css/main.0a4f82c2.chunk.css.map",
-    "static/js/2.cb68f4a2.chunk.js.LICENSE.txt": "/get-pics/static/js/2.cb68f4a2.chunk.js.LICENSE.txt",
-    "static/media/cameraman.aa7f5dce.png": "/get-pics/static/media/cameraman.aa7f5dce.png",
-    "static/media/getPics-logo.f3ad49ba.png": "/get-pics/static/media/getPics-logo.f3ad49ba.png"
+    "main.css": "/GetPics/static/css/main.0a4f82c2.chunk.css",
+    "main.js": "/GetPics/static/js/main.c034a692.chunk.js",
+    "main.js.map": "/GetPics/static/js/main.c034a692.chunk.js.map",
+    "runtime-main.js": "/GetPics/static/js/runtime-main.6d5a9d2b.js",
+    "runtime-main.js.map": "/GetPics/static/js/runtime-main.6d5a9d2b.js.map",
+    "static/js/2.cb68f4a2.chunk.js": "/GetPics/static/js/2.cb68f4a2.chunk.js",
+    "static/js/2.cb68f4a2.chunk.js.map": "/GetPics/static/js/2.cb68f4a2.chunk.js.map",
+    "static/js/3.08f09c7f.chunk.js": "/GetPics/static/js/3.08f09c7f.chunk.js",
+    "static/js/3.08f09c7f.chunk.js.map": "/GetPics/static/js/3.08f09c7f.chunk.js.map",
+    "index.html": "/GetPics/index.html",
+    "static/css/main.0a4f82c2.chunk.css.map": "/GetPics/static/css/main.0a4f82c2.chunk.css.map",
+    "static/js/2.cb68f4a2.chunk.js.LICENSE.txt": "/GetPics/static/js/2.cb68f4a2.chunk.js.LICENSE.txt",
+    "static/media/cameraman.aa7f5dce.png": "/GetPics/static/media/cameraman.aa7f5dce.png",
+    "static/media/getPics-logo.f3ad49ba.png": "/GetPics/static/media/getPics-logo.f3ad49ba.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d0da93c8.js",
+    "static/js/runtime-main.6d5a9d2b.js",
     "static/js/2.cb68f4a2.chunk.js",
     "static/css/main.0a4f82c2.chunk.css",
     "static/js/main.c034a692.chunk.js"
